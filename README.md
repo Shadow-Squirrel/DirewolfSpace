@@ -58,13 +58,13 @@ The pages already declare `https://direwolfspace.com/...` as their canonical URL
 
 ## Content rules the site follows
 
-The copy was written to stay credible while the company is new:
+The copy presents Direwolf as fully capable now, in the present tense, with a few honesty rules kept:
 
 - No pricing, customer names, contract awards, past performance, testimonials, team bios or headcount.
-- SDVOSB certification and SAM.gov registration are described as **being pursued**, not held. Update `about.html` when they are complete.
-- No facility clearance is implied. Work is described as unclassified, with CUI handling when required.
-- Advanced Systems, the analysis platform, RF/PNT technology and space cybersecurity products are described in the **future tense**.
-- No actual intelligence findings are published. `insights.html` is a launch page until real pieces exist.
+- SDVOSB certification and SAM.gov registration are described as **in progress**, not held. Update `about.html` and `index.html` when they are complete.
+- No facility clearance is implied. Work is described as unclassified and CUI handled in protected environments.
+- No roadmap, milestones or "building toward" language anywhere. The analysis platform, RF/PNT technology and space cybersecurity technology are described as capabilities Direwolf builds and operates.
+- No actual intelligence findings are published. The Iran Foreign Space Capability Assessment is listed as a featured assessment available on request; make sure it is ready to send before promoting the page.
 
 ## Things to add when available
 
