@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technology Roadmap | Direwolf Space Systems</title>
+  <meta name="description" content="Advanced Systems roadmap: a planned Space Intelligence Analysis Platform, AI-assisted analysis, RF/PNT interference detection, and space cybersecurity.">
+  <link rel="canonical" href="https://direwolfspace.com/technology.html">
+  <meta name="theme-color" content="#06080d">
+  <meta name="robots" content="index,follow">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Direwolf Space Systems">
+  <meta property="og:title" content="Technology Roadmap | Direwolf Space Systems">
+  <meta property="og:description" content="Advanced Systems roadmap: a planned Space Intelligence Analysis Platform, AI-assisted analysis, RF/PNT interference detection, and space cybersecurity.">
+  <meta property="og:url" content="https://direwolfspace.com/technology.html">
+  <meta property="og:image" content="https://direwolfspace.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Direwolf Space Systems. Intelligence Beyond the Horizon.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Technology Roadmap | Direwolf Space Systems">
+  <meta name="twitter:description" content="Advanced Systems roadmap: a planned Space Intelligence Analysis Platform, AI-assisted analysis, RF/PNT interference detection, and space cybersecurity.">
+  <meta name="twitter:image" content="https://direwolfspace.com/assets/img/og-image.jpg">
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Fonts (self-hosted, see assets/fonts) -->
+  <link rel="preload" href="assets/fonts/michroma-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page page--technology">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Direwolf Space Systems home">
+        <img class="brand__logo" src="assets/img/mark-160.png" width="44" height="44" alt="">
+        <span class="brand__text">
+          <span class="brand__name">DIREWOLF</span>
+          <span class="brand__sub">SPACE SYSTEMS</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="capabilities.html">Capabilities</a></li>
+          <li><a class="nav__link" href="intelligence.html">Intelligence</a></li>
+          <li><a class="nav__link" href="training.html">Training</a></li>
+          <li><a class="nav__link" href="technology.html">Technology</a></li>
+          <li><a class="nav__link" href="insights.html">Insights</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__cta"><a class="btn btn--primary btn--sm" href="contact.html">Request a briefing</a></div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="hero hero--page">
+      <div class="hero__bg" aria-hidden="true">
+        <picture>
+          <source srcset="assets/img/hero-space-portrait.webp" media="(max-width: 700px)" type="image/webp">
+          <img class="hero__space" src="assets/img/hero-space.webp" width="2400" height="1350" alt="" decoding="async" fetchpriority="high">
+        </picture>
+        <div class="hero__shade"></div>
+        <div class="hero__grid"></div>
+        <canvas class="hero__stars"></canvas>
+        <svg class="hero__orbit" viewBox="0 0 100 60" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <path id="orbit-track" class="orbit-path" d="M -6 44 C 18 6, 78 4, 106 26"/>
+          <circle class="orbit-sat-halo" r="0.9"><animateMotion dur="46s" repeatCount="indefinite"><mpath href="#orbit-track"/></animateMotion></circle>
+          <circle class="orbit-sat" r="0.32"><animateMotion dur="46s" repeatCount="indefinite"><mpath href="#orbit-track"/></animateMotion></circle>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="hero__inner">
+          <p class="eyebrow">Advanced Systems Roadmap</p>
+          <h1>Intelligence first. Then the software and sensors to scale it.</h1>
+          <p class="lede">Nothing on this page ships today. It describes the software, AI, RF/PNT, and cybersecurity technology Direwolf is building toward, in the order that customer problems are expected to demand it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE SEQUENCE ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="split split--top">
+          <div>
+            <p class="eyebrow">The sequence</p>
+            <h2>Why the roadmap starts with intelligence</h2>
+            <p>The constraint in space intelligence is the analyst's time. Every tool on this roadmap is intended to let one analyst process dramatically larger volumes of space information, and, later, to lead to the sensors and systems that produce it.</p>
+            <p>Direwolf does not begin by designing a spacecraft. It begins with intelligence, because intelligence work surfaces customer problems in detail. Recurring monitoring turns those problems into repeatable workflows. Repeatable workflows justify internal software, and internal software that proves itself becomes a product customers can buy.</p>
+            <p><strong>Customer problems drive the technology roadmap.</strong> That is the reason the company is being built in this order.</p>
+          </div>
+          <div class="panel panel--blue reveal">
+            <p class="eyebrow">At a glance</p>
+            <dl class="kv">
+              <dt>Status</dt><dd>Planned. Nothing described here ships today.</dd>
+              <dt>Starting point</dt><dd>Intelligence services, delivered today.</dd>
+              <dt>Driver</dt><dd>Customer problems.</dd>
+              <dt>R&amp;D priorities</dt><dd>AI-assisted intelligence software. RF and PNT interference detection. Space cybersecurity technology.</dd>
+              <dt>Funding path</dt><dd>SpaceWERX, SBIR, STTR, and other Department of Defense research and development programs, pursued as the technology matures. No award has been made.</dd>
+            </dl>
+            <div class="btn-row mt-3">
+              <a class="btn btn--ghost btn--sm" href="#platform">Platform</a>
+              <a class="btn btn--ghost btn--sm" href="#ai">AI</a>
+              <a class="btn btn--ghost btn--sm" href="#rf-pnt">RF and PNT</a>
+              <a class="btn btn--ghost btn--sm" href="#cyber">Cybersecurity</a>
+              <a class="btn btn--ghost btn--sm" href="#roadmap">Flywheel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PLATFORM ============ -->
+    <section class="section section--alt" id="platform">
+      <div class="container">
+        <div class="split split--top">
+          <div>
+            <p class="eyebrow">The Space Intelligence Analysis Platform: planned</p>
+            <h2>Not another map of dots orbiting Earth.</h2>
+            <p>The Direwolf Space Intelligence Analysis Platform is planned software for analysts. It will combine orbital data, intelligence, historical behavior, sources, watchlists, threat information, analyst notes, and AI in one working environment. An analyst will select a spacecraft and see what the organization knows about it, in one place.</p>
+            <p>The plan is to develop it first for Direwolf's own analytic work. If it makes that work substantially more efficient, it will be turned into something customers can buy.</p>
+            <div class="btn-row mt-3">
+              <a class="btn btn--ghost btn--sm" href="index.html#differentiator">Beyond the dot on the map</a>
+            </div>
+          </div>
+          <div class="mock reveal" role="group" aria-label="Planned analyst view of a spacecraft record">
+            <div class="mock__bar">Spacecraft record. Planned analyst view</div>
+            <div class="mock__body">
+              <div class="mock__row"><span class="mock__key">ORBIT</span><span class="mock__val">Regime, altitude, inclination, and current orbital elements</span></div>
+              <div class="mock__row"><span class="mock__key">OPERATOR</span><span class="mock__val">Operating organization</span></div>
+              <div class="mock__row"><span class="mock__key">COUNTRY</span><span class="mock__val">Owning country</span></div>
+              <div class="mock__row"><span class="mock__key">PROGRAM</span><span class="mock__val">Associated military program</span></div>
+              <div class="mock__row"><span class="mock__key">LAUNCH</span><span class="mock__val">Launch date, vehicle, and site</span></div>
+              <div class="mock__row"><span class="mock__key">MANEUVERS</span><span class="mock__val">Historical maneuver record</span></div>
+              <div class="mock__row"><span class="mock__key">RELATED</span><span class="mock__val">Related spacecraft</span></div>
+              <div class="mock__row"><span class="mock__key">THREAT RPT</span><span class="mock__val">Threat reporting linked to this object</span></div>
+              <div class="mock__row"><span class="mock__key">GROUND INFRA</span><span class="mock__val">Associated ground infrastructure</span></div>
+              <div class="mock__row"><span class="mock__key">SOURCES</span><span class="mock__val">Relevant sources, cited</span></div>
+              <div class="mock__row"><span class="mock__key">ASSESSMENT</span><span class="mock__val mock__val--blue" data-type>Analyst assessment, written by the analyst from the record above.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI-ASSISTED ANALYSIS ============ -->
+    <section class="section" id="ai">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">AI-assisted analysis: R&amp;D priority</p>
+          <h2>More information per analyst, not fewer analysts.</h2>
+          <p>The goal of AI in the software Direwolf plans to build is not to replace the analyst. It is to let an analyst process dramatically larger volumes of space information: AI-assisted collection, correlation, anomaly detection, reporting, research, and analysis. The analyst's judgment remains the product.</p>
+        </div>
+        <div class="grid grid-2">
+          <div class="card reveal">
+            <span class="card__num">Example query 01</span>
+            <h3>&ldquo;Summarize significant activity by Chinese military spacecraft during the past 30 days.&rdquo;</h3>
+            <p>Reporting: significant activity, summarized across a period.</p>
+          </div>
+          <div class="card reveal" data-delay="1">
+            <span class="card__num">Example query 02</span>
+            <h3>&ldquo;Identify spacecraft whose recent behavior differs significantly from their historical behavior.&rdquo;</h3>
+            <p>Anomaly detection: recent behavior compared with historical behavior.</p>
+          </div>
+          <div class="card reveal" data-delay="2">
+            <span class="card__num">Example query 03</span>
+            <h3>&ldquo;What objects associated with this program have maneuvered during the past 90 days?&rdquo;</h3>
+            <p>Correlation: objects, programs, and maneuver history, linked.</p>
+          </div>
+          <div class="card reveal" data-delay="3">
+            <span class="card__num">Example query 04</span>
+            <h3>&ldquo;Generate an intelligence summary of this spacecraft and its associated foreign program.&rdquo;</h3>
+            <p>Research and analysis: an intelligence summary drafted for the analyst's review.</p>
+          </div>
+        </div>
+        <p class="text-muted small mt-3">Questions the platform will eventually answer. None of this capability exists today.</p>
+      </div>
+    </section>
+
+    <!-- ============ RF / PNT ============ -->
+    <section class="section section--alt" id="rf-pnt">
+      <div class="container">
+        <div class="split split--top">
+          <div>
+            <p class="eyebrow">RF and PNT technology: later-stage R&amp;D</p>
+            <h2>GPS is degraded in your operating area and you cannot say by what.</h2>
+            <p>Direwolf intends to develop equipment or software capable of detecting, characterizing, mapping, and potentially geolocating RF or GNSS interference, including GPS jamming and spoofing detection and correlation.</p>
+            <ul class="feature-list mt-3">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h3l2-6 3 12 3-9 2 3h5"/></svg>
+                <div><strong>Detect</strong><span>Recognize that RF or GNSS interference is present, including GPS jamming and spoofing.</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19V9M10 19V5M15 19v-8M20 19v-4"/></svg>
+                <div><strong>Characterize</strong><span>Describe the nature of the interference.</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg>
+                <div><strong>Map</strong><span>Place the interference in an operating area.</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="7"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+                <div><strong>Geolocate</strong><span>Potentially locate the source, with correlation across events.</span></div>
+              </li>
+            </ul>
+          </div>
+          <div class="panel reveal">
+            <p class="eyebrow">Today</p>
+            <h3>The intelligence product that exists now</h3>
+            <p class="text-muted">This is later-stage work that depends on hardware and test capability the company is not yet positioned to field. Today, Direwolf addresses this problem through RF/PNT interference analysis as an intelligence product.</p>
+            <a class="btn btn--ghost btn--sm mt-2" href="intelligence.html">Intelligence products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPACE CYBERSECURITY ============ -->
+    <section class="section" id="cyber">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Space cybersecurity technology: long-term direction</p>
+          <h2>Over time, security technology for the systems that fly the mission.</h2>
+          <p>This direction follows naturally from the founder's cybersecurity background and from the Space Security intelligence work the company does today. Until that technology exists, Direwolf's Space Security offering remains intelligence and analysis.</p>
+        </div>
+        <div class="contrast reveal">
+          <div class="contrast__item contrast__item--dim">
+            <span class="contrast__label">Today</span>
+            <p class="contrast__text">Space Security: intelligence and analysis.</p>
+          </div>
+          <div class="contrast__item contrast__item--lit">
+            <span class="contrast__label">Planned, over time</span>
+            <p class="contrast__text">Security technology for satellites, ground systems, command-and-control infrastructure, telemetry networks, and other mission systems.</p>
+          </div>
+        </div>
+        <div class="btn-row mt-3">
+          <a class="btn btn--ghost btn--sm" href="capabilities.html#space-security">Space Security today</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ROADMAP / FLYWHEEL ============ -->
+    <section class="section section--alt" id="roadmap">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Growth flywheel</p>
+          <h2>From intelligence services to larger programs</h2>
+          <p>Each stage of the roadmap grows out of the one before it. Customer problems drive the technology roadmap, and the sequence below is the order in which Direwolf expects them to demand it.</p>
+        </div>
+        <ol class="steps steps--row">
+          <li class="reveal">
+            <h3>Intelligence services</h3>
+            <p>Assessments, briefings, and custom RFIs, delivered today.</p>
+          </li>
+          <li class="reveal" data-delay="1">
+            <h3>Learn customer problems</h3>
+            <p>Each engagement surfaces the problems worth solving, in detail.</p>
+          </li>
+          <li class="reveal" data-delay="2">
+            <h3>Recurring monitoring</h3>
+            <p>Watch requirements turn those problems into repeatable workflows.</p>
+          </li>
+          <li class="reveal" data-delay="3">
+            <h3>Internal software</h3>
+            <p>Repeatable workflows justify tools built first for Direwolf's own analysts.</p>
+          </li>
+          <li class="reveal">
+            <h3>Commercial software</h3>
+            <p>Software that proves itself becomes something customers can buy.</p>
+          </li>
+          <li class="reveal" data-delay="1">
+            <h3>Government-funded R&amp;D</h3>
+            <p>Programs such as SpaceWERX, SBIR, and STTR could fund portions of the roadmap as the technology matures.</p>
+          </li>
+          <li class="reveal" data-delay="2">
+            <h3>Proprietary technology</h3>
+            <p>RF and PNT, space cybersecurity, sensors, and ground systems developed from that research.</p>
+          </li>
+          <li class="reveal" data-delay="3">
+            <h3>Larger programs</h3>
+            <p>Larger government and commercial programs built on proprietary technology.</p>
+          </li>
+        </ol>
+        <div class="grid grid-2 mt-4">
+          <div class="panel reveal">
+            <p class="eyebrow">Government-funded research and development</p>
+            <h3>Programs that could fund the roadmap</h3>
+            <p class="text-muted">Over time, programs such as SpaceWERX, SBIR, STTR, and other Department of Defense research and development programs could fund portions of this roadmap. Direwolf intends to pursue them as the technology matures. No award has been made and none is claimed.</p>
+          </div>
+          <div class="panel reveal" data-delay="1">
+            <p class="eyebrow">Now</p>
+            <h3>What this means for customers today</h3>
+            <p class="text-muted">Every tool on this page will be shaped by the intelligence work available today. If an organization has a problem in the space domain that current tools do not solve, describing it to Direwolf is the most direct way to influence what gets built.</p>
+            <p class="text-muted">In the meantime, the assessments, RF/PNT interference analysis, and monitoring described on the Intelligence page are the current answer to the problems this roadmap is meant to solve.</p>
+            <div class="btn-row mt-2">
+              <a class="btn btn--blue btn--sm" href="intelligence.html#assessments">Assessments</a>
+              <a class="btn btn--ghost btn--sm" href="intelligence.html#monitoring">Monitoring</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band">
+      <div class="container">
+        <p class="eyebrow eyebrow--plain">Shape the roadmap</p>
+        <h2>The roadmap is written from problems customers describe. Describe yours.</h2>
+        <p>Send the problem, the decision it supports, and the timeframe. Direwolf will respond by email.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="contact.html">Describe a technology problem</a>
+          <a class="btn btn--ghost" href="capabilities.html#advanced-systems">Advanced Systems overview</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <picture>
+            <source srcset="assets/img/logo-horizontal-sm.webp" type="image/webp">
+            <img src="assets/img/logo-horizontal-sm.png" width="300" height="119" alt="Direwolf Space Systems. Intelligence Beyond the Horizon." loading="lazy">
+          </picture>
+          <p class="mt-2">A U.S. space intelligence and defense technology company serving the national security and commercial space communities.</p>
+        </div>
+        <div class="footer__col">
+          <h2>Company</h2>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h2>Capabilities</h2>
+          <ul>
+            <li><a href="capabilities.html">Capabilities overview</a></li>
+            <li><a href="intelligence.html">Intelligence products</a></li>
+            <li><a href="training.html">Training &amp; exercises</a></li>
+            <li><a href="technology.html">Technology</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div>&copy; <span data-year>2026</span> Direwolf Space Systems, LLC. All rights reserved.</div>
+        <ul class="facts">
+          <li>Veteran-owned</li>
+          <li>Colorado, USA</li>
+          <li><a href="mailto:contact@direwolfspace.com">contact@direwolfspace.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
