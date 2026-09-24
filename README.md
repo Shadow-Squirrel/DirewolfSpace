@@ -20,17 +20,11 @@ assets/css/style.css  All styling (design tokens at the top of the file)
 assets/js/main.js     Mobile nav, scroll reveal, star field, contact form
 assets/img/           Logo lockups, mark, favicons, social share image, hero backdrops
 assets/fonts/         Self-hosted web fonts
-tools/render_hero_background.py   Regenerates the Earth-from-orbit hero backdrops
 robots.txt, sitemap.xml
 .github/workflows/pages.yml   GitHub Pages deployment
 ```
 
-The hero backdrop (night-side Earth limb, city lights, star field, nebula, sun glare) is rendered procedurally rather than taken from a stock photo, so it is royalty-free and can be re-rendered with different parameters:
-
-```
-pip install numpy pillow
-python3 tools/render_hero_background.py
-```
+The hero backdrop is the supplied Earth-from-orbit image, saved as `assets/img/hero-space.webp` (extended upward with a faded band of its own sky so the full panorama fits the tall home hero) and `assets/img/hero-space-portrait.webp` (a crop for phones). Replace both files to change the backdrop; keep the same names and the pages need no edits.
 
 Motion on the site (twinkling stars, the orbit track, the ticker, scroll reveals, the typewriter block and hover effects) is disabled automatically for visitors who set "reduce motion" in their operating system.
 
