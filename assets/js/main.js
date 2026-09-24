@@ -170,18 +170,6 @@
     });
   }
 
-  /* ---------- UTC clock ---------- */
-  var clocks = document.querySelectorAll('[data-utc-clock]');
-  if (clocks.length) {
-    var pad = function (n) { return (n < 10 ? '0' : '') + n; };
-    var tick = function () {
-      var d = new Date();
-      var s = pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes()) + ':' + pad(d.getUTCSeconds()) + 'Z';
-      clocks.forEach(function (c) { c.textContent = s; c.setAttribute('datetime', d.toISOString()); });
-    };
-    tick(); setInterval(tick, 1000);
-  }
-
   /* ---------- Contact form: compose an email (no backend on a static site) ---------- */
   var form = document.getElementById('contact-form');
   if (form) {

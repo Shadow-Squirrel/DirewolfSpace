@@ -26,7 +26,7 @@ robots.txt, sitemap.xml
 
 The hero backdrop is the supplied Earth-from-orbit image, saved as `assets/img/hero-space.webp` (extended upward with a faded band of its own sky so the full panorama fits the tall home hero) and `assets/img/hero-space-portrait.webp` (a crop for phones). Replace both files to change the backdrop; keep the same names and the pages need no edits.
 
-Motion on the site (twinkling stars, the orbit track, the ticker, scroll reveals, the typewriter block and hover effects) is disabled automatically for visitors who set "reduce motion" in their operating system.
+Motion on the site (twinkling stars, the orbit track, scroll reveals, the typewriter block and hover effects) is disabled automatically for visitors who set "reduce motion" in their operating system.
 
 All links between pages are **relative** (`about.html`, `assets/css/style.css`). Keep them that way. GitHub project sites are served under a sub-path, and root-relative links (`/about.html`) would break there.
 
