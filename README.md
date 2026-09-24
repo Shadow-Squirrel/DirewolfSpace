@@ -53,7 +53,7 @@ The pages already declare `https://direwolfspace.com/...` as their canonical URL
 
 - Every page carries the same header, nav and footer. When you change one, change all of them (search for the same markup across the `.html` files).
 - Design tokens (colours, fonts, spacing) live in the `:root` block at the top of `assets/css/style.css`.
-- The contact form composes an email in the visitor's mail client. Change the destination by editing the `data-to` attribute on the `<form>` in `contact.html` and the `mailto:` links in the footers. To collect submissions without email, wire the form to a service such as Formspree or Basin by replacing the form's `action` and removing the JavaScript handler in `assets/js/main.js`.
+- The contact form posts to [FormSubmit](https://formsubmit.co), a free form-relay service that forwards every submission to `contact@direwolfspace.com` (no account needed). **One-time activation:** the first time the form is submitted, FormSubmit emails an activation link to `contact@direwolfspace.com`; click it and every later submission is delivered. Until then the form reports that it could not be sent. After activation, FormSubmit's confirmation page offers a random alias endpoint (for example `https://formsubmit.co/1a2b3c...`); swapping it into the form's `action` and `data-endpoint` attributes in `contact.html` keeps the address out of the page source. To change the destination address, edit those two attributes and the `mailto:` links in the footers.
 - Fonts (Michroma, Space Grotesk, Inter) are self-hosted in `assets/fonts/` under the SIL Open Font License, so the site makes no third-party requests. The `@font-face` rules are at the top of the stylesheet.
 
 ## Content rules the site follows

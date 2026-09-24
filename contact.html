@@ -102,9 +102,16 @@
           <div>
             <p class="eyebrow">Inquiry</p>
             <h2>Send an inquiry</h2>
-            <p class="text-muted">This form opens a pre-addressed message in your email client. Nothing is stored on this website. If you prefer, write to <a href="mailto:contact@direwolfspace.com">contact@direwolfspace.com</a> directly.</p>
+            <p class="text-muted">Submissions are delivered to <a href="mailto:contact@direwolfspace.com">contact@direwolfspace.com</a>. Nothing is stored on this website. If you prefer, write to that address directly.</p>
 
-            <form class="form mt-3" id="contact-form" data-to="contact@direwolfspace.com" action="mailto:contact@direwolfspace.com" method="post" enctype="text/plain" novalidate>
+            <form class="form mt-3" id="contact-form" action="https://formsubmit.co/contact@direwolfspace.com" method="POST" data-endpoint="https://formsubmit.co/ajax/contact@direwolfspace.com">
+              <input type="hidden" name="_subject" value="New inquiry from direwolfspace.com">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" value="https://direwolfspace.com/contact.html?sent=1">
+              <div class="visually-hidden" aria-hidden="true">
+                <label for="f-honey">Leave this field empty</label>
+                <input id="f-honey" name="_honey" type="text" tabindex="-1" autocomplete="off">
+              </div>
               <div class="form__row">
                 <div class="field">
                   <label for="f-name">Name</label>
@@ -138,10 +145,10 @@
                 <textarea id="f-message" name="message" required placeholder="The question, the decision it supports, the timeframe, and any constraints on format or handling."></textarea>
               </div>
               <div class="btn-row">
-                <button class="btn btn--primary" type="submit">Compose email</button>
+                <button class="btn btn--primary" type="submit">Send inquiry</button>
                 <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
               </div>
-              <p class="form__note">Do not include classified information or controlled unclassified information in an initial inquiry. Direwolf will arrange appropriate handling once the engagement is scoped.</p>
+              <p class="form__note">Do not include classified information or controlled unclassified information in an initial inquiry. Direwolf will arrange appropriate handling once the engagement is scoped. Form delivery is handled by FormSubmit, which forwards your message to our inbox.</p>
             </form>
           </div>
 
@@ -171,7 +178,7 @@
               <p class="eyebrow">Direct</p>
               <dl class="kv">
                 <dt>Email</dt><dd><a href="mailto:contact@direwolfspace.com">contact@direwolfspace.com</a></dd>
-                <dt>Location</dt><dd>Colorado, United States. Remote-first, and prepared to travel for customers, contracts, exercises, and program work.</dd>
+                <dt>Location</dt><dd>Colorado, United States. Available to travel for customers, contracts, exercises, and program work.</dd>
                 <dt>Handling</dt><dd>Unclassified and appropriately protected environments, including CUI environments when required.</dd>
               </dl>
             </div>

@@ -170,30 +170,45 @@
     });
   }
 
-  /* ---------- Contact form: compose an email (no backend on a static site) ---------- */
+  /* ---------- Contact form: submit to the form relay without leaving the page ---------- */
   var form = document.getElementById('contact-form');
   if (form) {
     var status = document.getElementById('form-status');
-    var to = form.getAttribute('data-to') || 'contact@direwolfspace.com';
+    var endpoint = form.getAttribute('data-endpoint');
+    var fallback = 'contact@direwolfspace.com';
+    var say = function (msg) { if (status) status.textContent = msg; };
+    try {
+      if (new URLSearchParams(window.location.search).get('sent') === '1') {
+        say('Thank you. Your inquiry has been sent, and we will reply by email.');
+      }
+    } catch (err) { /* ignore */ }
     form.addEventListener('submit', function (e) {
+      if (!window.fetch || !endpoint) return; /* no fetch: let the browser post the form normally */
+      if (!form.checkValidity()) { e.preventDefault(); form.reportValidity(); return; }
       e.preventDefault();
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      var get = function (name) { var el = form.elements[name]; return el ? el.value.trim() : ''; };
-      var topic = get('topic') || 'General inquiry';
-      var subject = '[' + topic + '] ' + (get('organization') || get('name') || 'Website inquiry');
-      var lines = [
-        'Name: ' + get('name'),
-        'Organization: ' + get('organization'),
-        'Email: ' + get('email'),
-        'Topic: ' + topic,
-        '',
-        get('message'),
-        '',
-        '(Sent from direwolfspace.com)'
-      ];
-      var href = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
-      if (status) status.textContent = 'Opening your email client. If nothing happens, email ' + to + ' directly.';
-      window.location.href = href;
+      var btn = form.querySelector('button[type="submit"]');
+      var data = {};
+      new FormData(form).forEach(function (v, k) { data[k] = v; });
+      var topic = data.topic || 'General inquiry';
+      data._subject = '[' + topic + '] ' + (data.organization || data.name || 'Website inquiry');
+      if (btn) btn.disabled = true;
+      say('Sending your inquiry.');
+      fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(function (r) { return r.json().then(function (body) { return { ok: r.ok, body: body }; }); })
+        .then(function (res) {
+          var ok = res.ok && (res.body.success === 'true' || res.body.success === true);
+          if (!ok) throw new Error(res.body && res.body.message ? res.body.message : 'Submission failed');
+          form.reset();
+          say('Thank you. Your inquiry has been sent, and we will reply by email.');
+        })
+        .catch(function () {
+          say('The form could not be sent. Please email ' + fallback + ' directly.');
+        })
+        .then(function () { if (btn) btn.disabled = false; });
     });
   }
 
