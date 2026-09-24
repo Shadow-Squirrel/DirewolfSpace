@@ -18,10 +18,21 @@ contact.html          Email-based inquiry form (no backend required)
 404.html              Not-found page
 assets/css/style.css  All styling (design tokens at the top of the file)
 assets/js/main.js     Mobile nav, scroll reveal, star field, contact form
-assets/img/           Logo lockups, mark, favicons, social share image
+assets/img/           Logo lockups, mark, favicons, social share image, hero backdrops
+assets/fonts/         Self-hosted web fonts
+tools/render_hero_background.py   Regenerates the Earth-from-orbit hero backdrops
 robots.txt, sitemap.xml
 .github/workflows/pages.yml   GitHub Pages deployment
 ```
+
+The hero backdrop (night-side Earth limb, city lights, star field, nebula, sun glare) is rendered procedurally rather than taken from a stock photo, so it is royalty-free and can be re-rendered with different parameters:
+
+```
+pip install numpy pillow
+python3 tools/render_hero_background.py
+```
+
+Motion on the site (twinkling stars, the orbit track, the ticker, scroll reveals, the typewriter block and hover effects) is disabled automatically for visitors who set "reduce motion" in their operating system.
 
 All links between pages are **relative** (`about.html`, `assets/css/style.css`). Keep them that way. GitHub project sites are served under a sub-path, and root-relative links (`/about.html`) would break there.
 

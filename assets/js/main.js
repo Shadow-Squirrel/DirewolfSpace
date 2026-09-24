@@ -146,9 +146,10 @@
       var vis = document.createElement('span'); vis.setAttribute('aria-hidden', 'true');
       var caret = document.createElement('span'); caret.className = 'type-caret'; caret.setAttribute('aria-hidden', 'true');
       el.appendChild(sr); el.appendChild(vis); el.appendChild(caret);
-      var obs = new IntersectionObserver(function (entries) {
-        if (!entries[0].isIntersecting) return;
-        obs.disconnect();
+      var started = false;
+      var run = function () {
+        if (started) return;
+        started = true;
         var i = 0;
         var step = function () {
           i += 1 + (Math.random() < 0.3 ? 1 : 0);
@@ -157,8 +158,15 @@
           else caret.classList.add('is-done');
         };
         setTimeout(step, 250);
+      };
+      var obs = new IntersectionObserver(function (entries) {
+        if (!entries[0].isIntersecting) return;
+        obs.disconnect();
+        run();
       }, { threshold: 0.4 });
       obs.observe(el);
+      // Safety net: never leave the block empty if the observer does not fire.
+      setTimeout(function () { if (!started) { started = true; vis.textContent = full; caret.classList.add('is-done'); } }, 12000);
     });
   }
 
