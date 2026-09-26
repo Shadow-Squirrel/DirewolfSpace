@@ -173,6 +173,11 @@
   /* ---------- Contact form: submit to the form relay without leaving the page ---------- */
   var form = document.getElementById('contact-form');
   if (form) {
+    try {
+      var wanted = new URLSearchParams(window.location.search).get('topic');
+      var sel = form.elements.topic;
+      if (wanted === 'supplier' && sel) sel.value = 'Supplier inquiry';
+    } catch (err) { /* ignore */ }
     var status = document.getElementById('form-status');
     var endpoint = form.getAttribute('data-endpoint');
     var fallback = 'contact@direwolfspace.com';

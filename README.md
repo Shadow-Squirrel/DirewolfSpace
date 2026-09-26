@@ -13,6 +13,8 @@ training.html         Courses and tabletop exercises
 technology.html       Analysis platform and advanced technology development
 about.html            Mission, company facts, doing business with Direwolf
 contact.html          Email-based inquiry form (no backend required)
+suppliers.html        Becoming a supplier (links to the contact form with the supplier topic preselected)
+privacy.html, terms.html, accessibility.html, export.html   Legal and policy pages
 404.html              Not-found page
 assets/css/style.css  All styling (design tokens at the top of the file)
 assets/js/main.js     Mobile nav, scroll reveal, star field, contact form
@@ -63,6 +65,10 @@ The copy presents Direwolf as fully capable now, in the present tense, with a fe
 - No facility clearance is implied. Work is described as unclassified and CUI handled in protected environments.
 - No roadmap, timelines or milestones anywhere. The analysis platform is described as operational; the Technology page describes the advanced AI, RF/PNT, space cybersecurity and sensor technology Direwolf is developing, without specifications or dates.
 - No intelligence findings or sample assessments are published on the site.
+
+## Legal pages
+
+The Privacy Policy, Terms of Use, Accessibility statement and Export Control Notice were drafted to fit how this site actually works: no analytics or cookies, self-hosted fonts, and a contact form relayed by FormSubmit. They are a sound starting point, not legal advice. Have an attorney review them, especially the governing-law and liability sections, and update the effective date whenever you change them. If you add analytics, a newsletter or another third-party service, update the Privacy Policy first.
 
 ## Things to add when available
 
