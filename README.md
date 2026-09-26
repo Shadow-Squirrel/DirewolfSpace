@@ -8,11 +8,9 @@ The site is a plain static site (HTML, CSS and a little JavaScript) with no buil
 
 ```
 index.html            Home
-capabilities.html     The four capability areas
-intelligence.html     Intelligence products and recurring reporting
+capabilities.html     The four capability areas, intelligence products and recurring reporting
 training.html         Courses and tabletop exercises
-technology.html       Advanced Systems roadmap (future tense by design)
-insights.html         Public analysis (launch page until the first pieces publish)
+technology.html       Analysis platform and advanced technology development
 about.html            Mission, company facts, doing business with Direwolf
 contact.html          Email-based inquiry form (no backend required)
 404.html              Not-found page
@@ -63,15 +61,14 @@ The copy presents Direwolf as fully capable now, in the present tense, with a fe
 - No pricing, customer names, contract awards, past performance, testimonials, team bios or headcount.
 - SDVOSB certification and SAM.gov registration are described as **in progress**, not held. Update `about.html` and `index.html` when they are complete.
 - No facility clearance is implied. Work is described as unclassified and CUI handled in protected environments.
-- No roadmap, milestones or "building toward" language anywhere. The analysis platform, RF/PNT technology and space cybersecurity technology are described as capabilities Direwolf builds and operates.
-- No actual intelligence findings are published. The Iran Foreign Space Capability Assessment is listed as a featured assessment available on request; make sure it is ready to send before promoting the page.
+- No roadmap, timelines or milestones anywhere. The analysis platform is described as operational; the Technology page describes the advanced AI, RF/PNT, space cybersecurity and sensor technology Direwolf is developing, without specifications or dates.
+- No intelligence findings or sample assessments are published on the site.
 
 ## Things to add when available
 
 - UEI, CAGE code and NAICS codes on `about.html` (candidates to verify with your accountant or a PTAC/APEX Accelerator: 541990, 541690, 541511, 541715, 611430).
 - A one-page capability statement PDF, linked from `about.html`.
 - A LinkedIn company page link in the footer.
-- Real posts on `insights.html`, starting with the first public analysis piece.
 - A privacy notice if you add analytics or a third-party form service.
 
 ## Local preview
